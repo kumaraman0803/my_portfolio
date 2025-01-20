@@ -1,0 +1,19 @@
+<header>
+    <mat-toolbar color="primary" class="mat-elevation-z6">
+      <div class="header-content">
+        <div class="logo-container">
+          <span class="logo"
+                [@logoAnimation]="logoState"
+                (mouseover)="toggleLogoState('hovered')"
+                (mouseout)="toggleLogoState('initial')">Portfolio</span>
+        </div>
+        <nav mat-tab-nav-bar class="nav-links">
+          <a mat-tab-link routerLink="/about" routerLinkActive #aboutLink="routerLinkActive">About</a>
+          <a mat-tab-link routerLink="/projects" routerLinkActive #projectsLink="routerLinkActive">Projects</a>
+          <a mat-tab-link routerLink="/contact" routerLinkActive #contactLink="routerLinkActive">Contact</a>
+          <a mat-tab-link routerLink="/skills" routerLinkActive #skillsLink="routerLinkActive">Skills</a>
+        </nav>
+      </div>
+    </mat-toolbar>
+  </header>
+  

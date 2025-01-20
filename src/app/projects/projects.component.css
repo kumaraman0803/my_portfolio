@@ -1,0 +1,12 @@
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure cards do not wrap to new lines */
+  gap: 20px; /* Adjust the space between cards */
+  padding: 20px; /* Add padding around the cards */
+}
+
+.projects-container app-project-card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust card width based on the number of cards per row */
+  margin-right: 20px; /* Adjust spacing between cards */
+  min-width: 300px; /* Ensure a minimum width for cards */
+}

@@ -1,0 +1,64 @@
+/* header.component.css */
+
+mat-toolbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-links {
+    margin-left: auto;
+  }
+  
+  .mat-tab-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .mat-tab-link:hover {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+    
+    .mat-tab-link {
+      font-size: 0.9rem;
+    }
+  }
+  

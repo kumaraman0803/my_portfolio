@@ -1,0 +1,12 @@
+
+  <div class="card" *ngIf="project">
+    <img src="https://example.com/image-url.jpg" class="card-img-top" alt="Project Image">
+    <div class="card-body">
+      <h5 class="card-title">{{ project.name }}</h5>
+      <p class="card-text">{{ project.description }}</p>
+      <!-- Example button to trigger project details dialog -->
+      <button class="btn btn-primary" (click)="openProjectDetailsDialog()">View Project Details</button>
+    </div>
+  </div>
+  
+  

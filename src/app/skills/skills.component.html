@@ -1,0 +1,15 @@
+<!-- skills.component.html -->
+<section class="skills">
+    <h2>Your Skills</h2>
+    <div class="skills-container">
+      <mat-card class="skill-card" *ngFor="let skill of skills" (mouseover)="onMouseOver(skill)">
+        <mat-card-header [ngStyle]="{ 'background-color': skill.color }">
+          <mat-card-title>{{ skill.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ skill.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </section>
+  
